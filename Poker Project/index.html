@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Poker!</title>
+  <script src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class = "win">
+        <h2>Winner: </h2><h2 class = 'current' id = 'current-winner'></h2>
+    </div>
+    <div class = "hand">
+        <h2>Winning Hand: </h2><h2 class = 'current' id = 'current-hand'></h2>
+    </div>
+    <div class = "board">
+        <h1>Board</h1>
+        <div class = "card">
+                <div class = "v-input">
+                    <button class = "dropVInput" id = 'cv1'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'cv1')">2</a>
+                    <a onclick="setContent('3', 'cv1')">3</a>
+                    <a onclick="setContent('4', 'cv1')">4</a>
+                    <a onclick="setContent('5', 'cv1')">5</a>
+                    <a onclick="setContent('6', 'cv1')">6</a>
+                    <a onclick="setContent('7', 'cv1')">7</a>
+                    <a onclick="setContent('8', 'cv1')">8</a>
+                    <a onclick="setContent('9', 'cv1')">9</a>
+                    <a onclick="setContent('10', 'cv1')">10</a>
+                    <a onclick="setContent('J', 'cv1')">J</a>
+                    <a onclick="setContent('Q', 'cv1')">Q</a>
+                    <a onclick="setContent('K', 'cv1')">K</a>
+                    <a onclick="setContent('A', 'cv1')">A</a>
+                </div>
+                </div>
+                <div class = "s-input">
+                    <button class = "dropSInput" id = 'cs1'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 'cs1')">C</a>
+                    <a onclick="setContent('D', 'cs1')">D</a>
+                    <a onclick="setContent('H', 'cs1')">H</a>
+                    <a onclick="setContent('S', 'cs1')">S</a>
+                </div>
+                </div>
+                <div class='img'>
+                <img src="card back red.png" id='bc1'/>
+            </div>
+        </div>
+        <div class = "card">
+                    <div class = "v-input">
+                        <button class = "dropVInput" id = 'cv2'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'cv2')">2</a>
+                    <a onclick="setContent('3', 'cv2')">3</a>
+                    <a onclick="setContent('4', 'cv2')">4</a>
+                    <a onclick="setContent('5', 'cv2')">5</a>
+                    <a onclick="setContent('6', 'cv2')">6</a>
+                    <a onclick="setContent('7', 'cv2')">7</a>
+                    <a onclick="setContent('8', 'cv2')">8</a>
+                    <a onclick="setContent('9', 'cv2')">9</a>
+                    <a onclick="setContent('10', 'cv2')">10</a>
+                    <a onclick="setContent('J', 'cv2')">J</a>
+                    <a onclick="setContent('Q', 'cv2')">Q</a>
+                    <a onclick="setContent('K', 'cv2')">K</a>
+                    <a onclick="setContent('A', 'cv2')">A</a>
+                </div>
+                    </div>
+                    <div class = "s-input">
+                        <button class = "dropSInput" id = 'cs2'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 'cs2')">C</a>
+                    <a onclick="setContent('D', 'cs2')">D</a>
+                    <a onclick="setContent('H', 'cs2')">H</a>
+                    <a onclick="setContent('S', 'cs2')">S</a>
+                </div>
+                    </div>
+                    <div class='img'>
+                        <img src="card back red.png" id='bc2'/>
+                    </div>
+        </div>
+        <div class = "card">
+                    <div class = "v-input">
+                        <button class = "dropVInput" id = 'cv3'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'cv3')">2</a>
+                    <a onclick="setContent('3', 'cv3')">3</a>
+                    <a onclick="setContent('4', 'cv3')">4</a>
+                    <a onclick="setContent('5', 'cv3')">5</a>
+                    <a onclick="setContent('6', 'cv3')">6</a>
+                    <a onclick="setContent('7', 'cv3')">7</a>
+                    <a onclick="setContent('8', 'cv3')">8</a>
+                    <a onclick="setContent('9', 'cv3')">9</a>
+                    <a onclick="setContent('10', 'cv3')">10</a>
+                    <a onclick="setContent('J', 'cv3')">J</a>
+                    <a onclick="setContent('Q', 'cv3')">Q</a>
+                    <a onclick="setContent('K', 'cv3')">K</a>
+                    <a onclick="setContent('A', 'cv3')">A</a>
+                </div>
+                    </div>
+                    <div class = "s-input">
+                        <button class = "dropSInput" id = 'cs3'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 'cs3')">C</a>
+                    <a onclick="setContent('D', 'cs3')">D</a>
+                    <a onclick="setContent('H', 'cs3')">H</a>
+                    <a onclick="setContent('S', 'cs3')">S</a>
+                </div>
+                    </div>
+                    <div class='img'>
+                        <img src="card back red.png" id='bc3'/>
+                    </div>
+        </div>
+        <div class = "card">
+                    <div class = "v-input">
+                        <button class = "dropVInput" id = 'cv4'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'cv4')">2</a>
+                    <a onclick="setContent('3', 'cv4')">3</a>
+                    <a onclick="setContent('4', 'cv4')">4</a>
+                    <a onclick="setContent('5', 'cv4')">5</a>
+                    <a onclick="setContent('6', 'cv4')">6</a>
+                    <a onclick="setContent('7', 'cv4')">7</a>
+                    <a onclick="setContent('8', 'cv4')">8</a>
+                    <a onclick="setContent('9', 'cv4')">9</a>
+                    <a onclick="setContent('10', 'cv4')">10</a>
+                    <a onclick="setContent('J', 'cv4')">J</a>
+                    <a onclick="setContent('Q', 'cv4')">Q</a>
+                    <a onclick="setContent('K', 'cv4')">K</a>
+                    <a onclick="setContent('A', 'cv4')">A</a>
+                </div>
+                    </div>
+                    <div class = "s-input">
+                        <button class = "dropSInput" id = 'cs4'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 'cs4')">C</a>
+                    <a onclick="setContent('D', 'cs4')">D</a>
+                    <a onclick="setContent('H', 'cs4')">H</a>
+                    <a onclick="setContent('S', 'cs4')">S</a>
+                </div>
+                    </div>
+                    <div class='img'>
+                        <img src="card back red.png" id='bc4'/>
+                    </div>
+        </div>
+        <div class = "card">
+                    <div class = "v-input">
+                        <button class = "dropVInput" id = 'cv5'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'cv5')">2</a>
+                    <a onclick="setContent('3', 'cv5')">3</a>
+                    <a onclick="setContent('4', 'cv5')">4</a>
+                    <a onclick="setContent('5', 'cv5')">5</a>
+                    <a onclick="setContent('6', 'cv5')">6</a>
+                    <a onclick="setContent('7', 'cv5')">7</a>
+                    <a onclick="setContent('8', 'cv5')">8</a>
+                    <a onclick="setContent('9', 'cv5')">9</a>
+                    <a onclick="setContent('10', 'cv5')">10</a>
+                    <a onclick="setContent('J', 'cv5')">J</a>
+                    <a onclick="setContent('Q', 'cv5')">Q</a>
+                    <a onclick="setContent('K', 'cv5')">K</a>
+                    <a onclick="setContent('A', 'cv5')">A</a>
+                </div>
+                    </div>
+                    <div class = "s-input">
+                        <button class = "dropSInput" id = 'cs5'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 'cs5')">C</a>
+                    <a onclick="setContent('D', 'cs5')">D</a>
+                    <a onclick="setContent('H', 'cs5')">H</a>
+                    <a onclick="setContent('S', 'cs5')">S</a>
+                </div>
+                    </div>
+                    <div class='img'>
+                        <img src="card back red.png" id='bc5'/>
+                    </div>
+        </div>
+    </div>
+    <div class = "select">
+        <div class = "main">
+            <h1>Player 1</h1>
+            <div class = "in-card-l">
+            <div class = "v-input">
+                <button class = "dropVInput" id = 'v1'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'v1')">2</a>
+                    <a onclick="setContent('3', 'v1')">3</a>
+                    <a onclick="setContent('4', 'v1')">4</a>
+                    <a onclick="setContent('5', 'v1')">5</a>
+                    <a onclick="setContent('6', 'v1')">6</a>
+                    <a onclick="setContent('7', 'v1')">7</a>
+                    <a onclick="setContent('8', 'v1')">8</a>
+                    <a onclick="setContent('9', 'v1')">9</a>
+                    <a onclick="setContent('10', 'v1')">10</a>
+                    <a onclick="setContent('J', 'v1')">J</a>
+                    <a onclick="setContent('Q', 'v1')">Q</a>
+                    <a onclick="setContent('K', 'v1')">K</a>
+                    <a onclick="setContent('A', 'v1')">A</a>
+                </div>
+            </div>
+            <div class = "s-input">
+                <button class = "dropSInput" id = 's1'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 's1')">C</a>
+                    <a onclick="setContent('D', 's1')">D</a>
+                    <a onclick="setContent('H', 's1')">H</a>
+                    <a onclick="setContent('S', 's1')">S</a>
+                </div>
+            </div>
+            <div class='img'>
+                <img src="card back red.png" id='c1'/>
+            </div>
+        </div>
+        <div class="in-card-l">
+            <div class = "v-input">
+                <button class = "dropVInput" id = 'v3'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'v3')">2</a>
+                    <a onclick="setContent('3', 'v3')">3</a>
+                    <a onclick="setContent('4', 'v3')">4</a>
+                    <a onclick="setContent('5', 'v3')">5</a>
+                    <a onclick="setContent('6', 'v3')">6</a>
+                    <a onclick="setContent('7', 'v3')">7</a>
+                    <a onclick="setContent('8', 'v3')">8</a>
+                    <a onclick="setContent('9', 'v3')">9</a>
+                    <a onclick="setContent('10', 'v3')">10</a>
+                    <a onclick="setContent('J', 'v3')">J</a>
+                    <a onclick="setContent('Q', 'v3')">Q</a>
+                    <a onclick="setContent('K', 'v3')">K</a>
+                    <a onclick="setContent('A', 'v3')">A</a>
+                </div>
+            </div>
+            <div class = "s-input">
+                <button class = "dropSInput" id = 's3'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 's3')">C</a>
+                    <a onclick="setContent('D', 's3')">D</a>
+                    <a onclick="setContent('H', 's3')">H</a>
+                    <a onclick="setContent('S', 's3')">S</a>
+                </div>
+            </div>
+            <div class='img'>
+                <img src="card back red.png" id='c3'/>
+            </div>
+        </div>
+    </div>
+        <div class = "opponent">
+            <h1>Player 2</h1>
+            <div class = "in-card-r">
+            <div class = "v-input">
+                <button class = "dropVInput" id = 'v2'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'v2')">2</a>
+                    <a onclick="setContent('3', 'v2')">3</a>
+                    <a onclick="setContent('4', 'v2')">4</a>
+                    <a onclick="setContent('5', 'v2')">5</a>
+                    <a onclick="setContent('6', 'v2')">6</a>
+                    <a onclick="setContent('7', 'v2')">7</a>
+                    <a onclick="setContent('8', 'v2')">8</a>
+                    <a onclick="setContent('9', 'v2')">9</a>
+                    <a onclick="setContent('10', 'v2')">10</a>
+                    <a onclick="setContent('J', 'v2')">J</a>
+                    <a onclick="setContent('Q', 'v2')">Q</a>
+                    <a onclick="setContent('K', 'v2')">K</a>
+                    <a onclick="setContent('A', 'v2')">A</a>
+                </div>
+            </div>
+            <div class = "s-input">
+                <button class = "dropSInput" id = 's2'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 's2')">C</a>
+                    <a onclick="setContent('D', 's2')">D</a>
+                    <a onclick="setContent('H', 's2')">H</a>
+                    <a onclick="setContent('S', 's2')">S</a>
+                </div>
+            </div>
+            <div class='img'>
+                <img src="card back red.png" id='c2'/>
+            </div>
+        </div>
+        <div class="in-card-r">
+            <div class = "v-input">
+                <button class = "dropVInput" id = 'v4'>Select Value</button>
+                <div class = "v-input-content">
+                    <a onclick="setContent('2', 'v4')">2</a>
+                    <a onclick="setContent('3', 'v4')">3</a>
+                    <a onclick="setContent('4', 'v4')">4</a>
+                    <a onclick="setContent('5', 'v4')">5</a>
+                    <a onclick="setContent('6', 'v4')">6</a>
+                    <a onclick="setContent('7', 'v4')">7</a>
+                    <a onclick="setContent('8', 'v4')">8</a>
+                    <a onclick="setContent('9', 'v4')">9</a>
+                    <a onclick="setContent('10', 'v4')">10</a>
+                    <a onclick="setContent('J', 'v4')">J</a>
+                    <a onclick="setContent('Q', 'v4')">Q</a>
+                    <a onclick="setContent('K', 'v4')">K</a>
+                    <a onclick="setContent('A', 'v4')">A</a>
+                </div>
+            </div>
+            <div class = "s-input">
+                <button class = "dropSInput" id = 's4'>Select Suit</button>
+                <div class = "s-input-content">
+                    <a onclick="setContent('C', 's4')">C</a>
+                    <a onclick="setContent('D', 's4')">D</a>
+                    <a onclick="setContent('H', 's4')">H</a>
+                    <a onclick="setContent('S', 's4')">S</a>
+                </div>
+            </div>
+            <div class='img'>
+                <img src="card back red.png" id='c4'/>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
